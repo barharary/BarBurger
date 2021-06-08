@@ -1,0 +1,89 @@
+
+
+<div class="page-header">
+  <h1>Bar Burger<small> </small></h1>
+</div>
+
+<h2>Hamburger price: {{calculatePrice()}}
+</h2>
+<br>
+menu:
+<br>
+burger -- {{priceOfOneBurger}} NIS
+<br>
+cheese -- {{priceOfOneCheese}} NIS
+<br>
+Tomato -- {{priceOfOneTomato}} NIS
+<br>
+Lettuce -- {{priceOfOneLettuce}} NIS
+<br>
+<button type="button" class="btn btn-success">ORDER</button>
+
+
+<div class = "Hamburger">
+
+  <div>
+    <app-lays className = "Bread" ></app-lays>
+  </div>
+
+  <div>
+  <app-lays *ngFor="let i of [].constructor(numOfTomato)" className = "Tomato" >  </app-lays>
+  </div>
+
+  <div>
+    <app-lays *ngFor="let i of [].constructor(numOfLettuce)" className = "Lettuce" ></app-lays>
+  </div>
+
+  <div>
+    <app-lays *ngFor="let i of [].constructor(numOfCheese)" className = "Cheese" > </app-lays>
+  </div>
+
+
+  <div>
+    <app-lays *ngFor="let i of [].constructor(numOfBurger)" className = "MeetLoaf" ></app-lays>
+  </div>
+
+  <div>
+  <app-lays className = "Bread"></app-lays>
+  </div>
+</div>
+
+
+
+
+
+<br>
+<br>
+<br>
+<div>
+
+  <button (click)=burgerDown() type="button" class="btn btn-sm btn-primary">DOWN - </button>
+  ------<span style="font-size: xx-large;">  🥩 </span> ------
+     <button (click)=burgerUp() type="button" class="btn btn-sm btn-primary"> UP +</button>
+
+</div>
+<br>
+<div>
+  <button (click)=tomatoDown() type="button" class="btn btn-sm btn-primary">DOWN - </button>
+  ------<span style="font-size: xx-large;">  🍅 </span> ------
+     <button (click)=tomatoUp() type="button" class="btn btn-sm btn-primary"> UP +</button>
+
+</div>
+
+<br>
+<div>
+     <button (click)=lettuceDown() type="button" class="btn btn-sm btn-primary">DOWN - </button>
+     ------<span style="font-size: xx-large;"> 🥬 </span> ------
+     <button (click)=lettuceUp() type="button" class="btn btn-sm btn-primary"> UP +</button>
+
+</div>
+
+<br>
+<div>
+     <button (click)=cheeseDown() type="button" class="btn btn-sm btn-primary">DOWN - </button>
+     ------<span style="font-size: xx-large;">🧀  </span> ------
+        <button (click)=cheeseUp() type="button" class="btn btn-sm btn-primary"> UP +</button>
+</div>
+
+
+

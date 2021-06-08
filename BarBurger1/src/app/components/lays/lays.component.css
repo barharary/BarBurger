@@ -1,0 +1,45 @@
+div {
+width: 100%;
+border-radius:500px;
+margin: auto;
+}
+
+
+.Tomato {
+width: 30px;
+height: 10px;
+display:flex;
+
+  background-color: tomato;
+}
+
+.Bread {
+  width: 400px;
+height: 40px;
+  background-color: rgb(218, 162, 90);
+}
+
+.Cheese {
+  display:block;
+
+  width: 300px;
+height: 10px;
+  background-color: rgb(232, 252, 53);
+}
+
+.MeetLoaf {
+  display:block;
+  width: 380px;
+  height: 25px;
+  padding: 1px;
+  background-color: rgb(117, 60, 22)
+}
+
+.Lettuce {
+  display:block;
+  width: 370px;
+  height: 15px;
+
+  background-color: limegreen;
+}
+
